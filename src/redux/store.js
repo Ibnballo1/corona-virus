@@ -1,10 +1,12 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// // import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import coronaReducers, { getData } from './actions-reducers';
 
-// const store = configureStore({
-//   reducer: {
-//     // counter: counterReducer,
-//   },
-// });
+const store = configureStore({
+  reducer: {
+    corona: coronaReducers,
+  },
+});
 
-// export default store;
+store.dispatch(getData());
+
+export default store;
