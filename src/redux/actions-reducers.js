@@ -23,7 +23,7 @@ export const getData = () => async (dispatch) => {
       capitalCity,
       confirmed,
       deaths,
-      recoverd,
+      recovered,
       updated,
     } = eachData[1].All;
 
@@ -33,11 +33,11 @@ export const getData = () => async (dispatch) => {
       capitalCity,
       confirmed,
       deaths,
-      recoverd,
+      recovered,
       updated,
     };
   });
-  console.log(dataArr);
+  // console.log(dataArr);
   dispatch(fetchData(dataArr));
 };
 

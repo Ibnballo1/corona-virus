@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   const date = new Date();
-//   console.log(date.getFullYear());
+  // console.log(date.getFullYear());
   return (
     <div>
       <p>
