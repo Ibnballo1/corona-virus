@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +36,41 @@
   100% {
     transform: translateY(0px);
   }
+} */
+
+.App {
+  background-color: #4369b2;
+}
+
+.headers {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: #4369b2;
+}
+
+.covidBody {
+  border: 2px solid green;
+}
+
+.mostAffectedContinent {
+  border: 2px solid purple;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.countries {
+  border: 2px solid brown;
+}
+
+.country {
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.eachCountry {
+  border: 2px solid red;
 }

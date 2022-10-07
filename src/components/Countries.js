@@ -1,15 +1,33 @@
-// import React from 'react';
-// import { useSelector } from 'react-redux';
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/forbid-prop-types */
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-// const Countries = () => {
-//   const stateData = useSelector((state) => state.corona);
-//   const newStateData = stateData.slice(0, 10);
-//   console.log(newStateData);
-//   return (
-//     <div>
-//       <h5>STATS BY COUNTRY</h5>
-//     </div>
-//   );
-// };
+const Countries = ({ countries, affected }) => (
+  <div className="country">
+    {
+      countries.map((country, index) => (
+        <div
+          className="eachCountry"
+          key={index}
+        >
+          <Link to={`/${country}`}>
+            <span>→</span>
+          </Link>
+          <h2>{country}</h2>
+          <p>{affected[index]}</p>
+        </div>
+      ))
+    }
+  </div>
+);
 
-// export default Countries;
+Countries.propTypes = {
+  countries: PropTypes.array.isRequired,
+  affected: PropTypes.array.isRequired,
+};
+
+export default Countries;

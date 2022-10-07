@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import Countries from './Countries';
+import Countries from './Countries';
 
 const Continent = () => {
   const stateData = useSelector((state) => state.corona);
@@ -27,23 +29,17 @@ const Continent = () => {
   }
 
   return (
-    <div>
-      <div>
+    <div className="covidBody">
+      <div className="mostAffectedContinent">
         <h2>{mostAffectedContinent}</h2>
-        <p>{mostConfirmed}</p>
+        <p>
+          {(mostConfirmed === -Infinity) ? 'Loading...' : mostConfirmed}
+          {' Affected'}
+        </p>
       </div>
-      <section>
+      <section className="countries">
         <h5>STATS BY COUNTRY</h5>
-        <div>
-          {
-            countries.map((country, index) => (
-              <div key={index}>
-                {country}
-                <p>{affected[index]}</p>
-              </div>
-            ))
-          }
-        </div>
+        <Countries countries={countries} affected={affected} />
       </section>
     </div>
   );

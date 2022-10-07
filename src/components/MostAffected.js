@@ -1,10 +1,10 @@
-import React from 'react';
-import Continent from './Continent';
+// import React from 'react';
+// import Continent from './Continent';
 
-const MostAffected = () => (
-  <div>
-    <Continent />
-  </div>
-);
+// const MostAffected = () => (
+//   <div>
+//     <Continent />
+//   </div>
+// );
 
-export default MostAffected;
+// export default MostAffected;
