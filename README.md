@@ -61,4 +61,4 @@ Kindly give a :hearts: if you like this.
 
 # License
 
-This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\Module 3- React and Application\Capstone-Project\corona-virus\MIT.md).
+This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\Module 3- React and Application\Capstone-Project\corona-virus/MIT.md).
