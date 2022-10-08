@@ -91,6 +91,7 @@
 .eachCountry:nth-child(3n+0) {
   background-color: #cf4278;
 }
+
 .eachCountry:nth-child(2) {
   background-color: #cf4278;
 }
