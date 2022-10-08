@@ -1,15 +1,15 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import { Provider } from 'react-redux';
-// import { store } from './app/store';
-// import App from './App';
+import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
+import { render, cleanup } from '@testing-library/react';
+import App from './App';
 
-// test('renders learn react link', () => {
-//   const { getByText } = render(
-//     <Provider store={store}>
-//       <App />
-//     </Provider>,
-//   );
+afterEach(cleanup);
 
-//   expect(getByText(/learn/i)).toBeInTheDocument();
-// });
+it('App component rendered correctly', () => {
+  const wrapper = render(
+    <MemoryRouter>
+      <App />
+    </MemoryRouter>,
+  );
+  expect(wrapper).toMatchSnapshot();
+});

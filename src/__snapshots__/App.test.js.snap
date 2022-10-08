@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component rendered correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <div
+          class="headers"
+        >
+          <p
+            class="headerp"
+          >
+            <span
+              class="lessthan"
+            >
+              &lt;
+            </span>
+            2022
+          </p>
+          <p
+            class="mostAffected"
+          >
+            Most Affected
+          </p>
+          <p />
+        </div>
+        <div
+          class="covidBody"
+        >
+          <div
+            class="titleBody"
+          >
+            <div
+              class="img"
+            >
+              <img
+                alt="Continent Map"
+                src="map1.png"
+              />
+            </div>
+            <div
+              class="mostAffectedContinent"
+            >
+              <h2
+                class="continent"
+              />
+              <p
+                class="numberOfAffected"
+              >
+                Loading...
+                 Affected
+              </p>
+            </div>
+          </div>
+          <section
+            class="countries"
+          >
+            <h5
+              class="titleh5"
+            >
+              STATS BY COUNTRY
+            </h5>
+            <div
+              class="country"
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <div
+        class="headers"
+      >
+        <p
+          class="headerp"
+        >
+          <span
+            class="lessthan"
+          >
+            &lt;
+          </span>
+          2022
+        </p>
+        <p
+          class="mostAffected"
+        >
+          Most Affected
+        </p>
+        <p />
+      </div>
+      <div
+        class="covidBody"
+      >
+        <div
+          class="titleBody"
+        >
+          <div
+            class="img"
+          >
+            <img
+              alt="Continent Map"
+              src="map1.png"
+            />
+          </div>
+          <div
+            class="mostAffectedContinent"
+          >
+            <h2
+              class="continent"
+            />
+            <p
+              class="numberOfAffected"
+            >
+              Loading...
+               Affected
+            </p>
+          </div>
+        </div>
+        <section
+          class="countries"
+        >
+          <h5
+            class="titleh5"
+          >
+            STATS BY COUNTRY
+          </h5>
+          <div
+            class="country"
+          />
+        </section>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
