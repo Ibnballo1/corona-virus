@@ -14,11 +14,11 @@ const Countries = ({ countries, affected }) => (
           className="eachCountry"
           key={index}
         >
-          <Link to={`/${country}`}>
-            <span>→</span>
-          </Link>
-          <h2>{country}</h2>
-          <p>{affected[index]}</p>
+          <Link className="links" to={`/${country}`}>➔</Link>
+          <div className="nameNum">
+            <h2 className="countryName">{country.toUpperCase()}</h2>
+            <p className="numAffected">{affected[index]}</p>
+          </div>
         </div>
       ))
     }

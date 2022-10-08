@@ -1,76 +1,162 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@400;700&family=Montserrat+Subrayada:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Roboto+Slab:wght@300;400;700&display=swap');
 
 .App {
-  background-color: #4369b2;
+  background-color: #ec4c8a;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
 .headers {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 12px;
-  background-color: #4369b2;
+  background-color: #ec4c8a;
 }
 
-.covidBody {
-  border: 2px solid green;
+.headerp,
+.mostAffected {
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.mostAffectedContinent {
-  border: 2px solid purple;
-  color: #fff;
+.titleBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img {
+  padding-left: 1rem;
+  opacity: 0.4;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.mostAffectedContinent,
+.countryConfirmed {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.continent,
+.countrydetail {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.numberOfAffected,
+.confirmDetail {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.continent,
+.numberOfAffected {
+  align-self: flex-start;
 }
 
 .countries {
-  border: 2px solid brown;
+  background-color: #cf4278;
+}
+
+.titleh5,
+.titleh4 {
+  margin: 0;
+  padding: 2px 0 2px 10px;
+  font-size: 12px;
+  word-spacing: 3px;
 }
 
 .country {
-  border: 2px solid blue;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .eachCountry {
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 5px;
+  background-color: #ec4c8a;
+}
+
+.eachCountry:nth-child(3n+0) {
+  background-color: #cf4278;
+}
+.eachCountry:nth-child(2) {
+  background-color: #cf4278;
+}
+
+.countrydetail,
+.confirmDetail {
+  align-self: flex-end;
+}
+
+.links {
+  border: 2px solid #fff;
+  text-decoration: none;
+  margin-top: 2px;
+  padding: 1px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 12px;
+  border-radius: 100%;
+}
+
+.nameNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.details {
+  height: 100vh;
+  padding: 1rem;
+}
+
+.countryConfirmed {
+  height: 20vh;
+  margin-bottom: 0;
+}
+
+.countryName,
+.numAffected {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.numAffected {
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+.countryDetails {
+  background-color: #cf4278;
+  padding-top: 12px;
+}
+
+.titleh4 {
+  background-color: #ec4c8a;
+  padding: 10px;
+}
+
+.allDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec4c8a;
+  padding: 10px;
+}
+
+.allDetails:nth-child(2n+0) {
+  background-color: #cf4278;
 }

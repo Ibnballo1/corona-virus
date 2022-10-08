@@ -2,7 +2,6 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
@@ -11,12 +10,10 @@ const CountryDetails = () => {
   const newStateData = stateData.slice(0, 50);
   const { country } = useParams();
   return (
-    <div>
-      {/* <h2>{country}</h2> */}
+    <div className="details">
       {
         newStateData.map((eachCountry, index) => {
           if (eachCountry.country === country) {
-            // console.log('eachCountry is ', eachCountry, ' and country is ', country);
             const {
               continent,
               confirmed,
@@ -27,36 +24,32 @@ const CountryDetails = () => {
             } = eachCountry;
             return (
               <div key={index}>
-                <section>
-                  <h2>{country}</h2>
-                  <p>{confirmed}</p>
+                <section className="countryConfirmed">
+                  <h2 className="countrydetail">{country.toUpperCase()}</h2>
+                  <p className="confirmDetail">{confirmed}</p>
                 </section>
-                <h4>Country Breakdown</h4>
                 <section className="countryDetails">
-                  <table border={1}>
-                    <tbody>
-                      <tr>
-                        <td>Continent</td>
-                        <td>{continent}</td>
-                      </tr>
-                      <tr>
-                        <td>Capital-city</td>
-                        <td>{capitalCity}</td>
-                      </tr>
-                      <tr>
-                        <td>Deaths</td>
-                        <td>{deaths}</td>
-                      </tr>
-                      <tr>
-                        <td>Recovered</td>
-                        <td>{recovered}</td>
-                      </tr>
-                      <tr>
-                        <td>Updated</td>
-                        <td>{updated}</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h4 className="titleh4">Country Breakdown</h4>
+                  <div className="allDetails">
+                    <h4>Continent</h4>
+                    <p>{continent}</p>
+                  </div>
+                  <div className="allDetails">
+                    <h4>Capital-city</h4>
+                    <p>{capitalCity}</p>
+                  </div>
+                  <div className="allDetails">
+                    <h4>Deaths</h4>
+                    <p>{deaths}</p>
+                  </div>
+                  <div className="allDetails">
+                    <h4>Recovered</h4>
+                    <p>{recovered}</p>
+                  </div>
+                  <div className="allDetails">
+                    <h4>Updated</h4>
+                    <p>{updated}</p>
+                  </div>
                 </section>
               </div>
             );

@@ -30,15 +30,20 @@ const Continent = () => {
 
   return (
     <div className="covidBody">
-      <div className="mostAffectedContinent">
-        <h2>{mostAffectedContinent}</h2>
-        <p>
-          {(mostConfirmed === -Infinity) ? 'Loading...' : mostConfirmed}
-          {' Affected'}
-        </p>
+      <div className="titleBody">
+        <div className="img">
+          <img src="map1.png" alt="Continent Map" />
+        </div>
+        <div className="mostAffectedContinent">
+          <h2 className="continent">{mostAffectedContinent.toUpperCase()}</h2>
+          <p className="numberOfAffected">
+            {(mostConfirmed === -Infinity) ? 'Loading...' : mostConfirmed}
+            {' Affected'}
+          </p>
+        </div>
       </div>
       <section className="countries">
-        <h5>STATS BY COUNTRY</h5>
+        <h5 className="titleh5">STATS BY COUNTRY</h5>
         <Countries countries={countries} affected={affected} />
       </section>
     </div>
