@@ -1,15 +1,15 @@
 # Corona Virus
 
-This is my final capstone project for the React Redux Module. I will set up the environment and tools needed to develop a React application with Redux. In the following projects, I will develop the actual application.
+This is my React capstone project for the React Redux Module. It is about building a mobile web application to check a list of metrics (numeric values) that will be created by making use of React and Redux. I will set up the environment and tools needed to develop a React application with Redux. In the following projects, I will develop the actual application. I selected an API that provides numeric data about a corona virus and then build the webapp around it. The webapp will have several pages.
 
 # Built With
 
 - Major Languages
-  - HTML
-  - CSS
   - JavaScript
   - React
   - Redux
+  - HTML
+  - CSS
   - Jest
 
 # Getting Started
@@ -18,8 +18,8 @@ To get a local copy up and running, follow these simple steps:
 
 ## Usage
 
-First copy this repo and clone it on your machine using this [link](git@github.com:Ibnballo1/bookstore.git).
-Then cd into bookstore folder.
+First copy this repo and clone it on your machine using this [link](https://github.com/Ibnballo1/corona-virus).
+Then cd into corona-virus folder.
 
 ## Install
 
@@ -39,7 +39,7 @@ Then cd into bookstore folder.
 # Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/Ibnballo1/bookstore/issues)
+Feel free to check the [issues page](https://github.com/Ibnballo1/corona-virus/issues)
 
 # Live Demo
 
@@ -52,5 +52,3 @@ Kindly give a :hearts: if you like this.
 - We expressed our gratitude for everyone.
 
 # License
-
-This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\Module 3- React and Application\bookstore/MIT.md).
