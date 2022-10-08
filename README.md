@@ -51,4 +51,10 @@ Kindly give a :hearts: if you like this.
 
 - We expressed our gratitude for everyone.
 
+# Accredition
+
+- I give credit to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+
 # License
+
+This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\Module 3- React and Application\Capstone-Project\corona-virus\MIT.md).
