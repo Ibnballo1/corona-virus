@@ -6,8 +6,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Countries = ({ countries, affected }) => (
+const Countries = ({
+  countries,
+  affected,
+  // filteredContinent,
+  // filteredCountry,
+}) => (
   <div className="country">
+    {/* {console.log(filteredContinent)} */}
+    {/* {console.log(filteredCountry)} */}
     {
       countries.map((country, index) => (
         <div
@@ -28,6 +35,8 @@ const Countries = ({ countries, affected }) => (
 Countries.propTypes = {
   countries: PropTypes.array.isRequired,
   affected: PropTypes.array.isRequired,
+  // filteredContinent: PropTypes.array.isRequired,
+  // filteredCountry: PropTypes.array.isRequired,
 };
 
 export default Countries;

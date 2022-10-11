@@ -37,12 +37,25 @@ export const getData = () => async (dispatch) => {
   dispatch(fetchData(dataArr));
 };
 
+export const searchFilter = (search) => ({
+  type: FILTER_DATA,
+  payload: search,
+});
+
 // Reducers
 const coronaReducers = (state = [], action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case FETCH_DATA:
       return payload;
+    default:
+      return state;
+  }
+};
+
+export const searchReducers = (state = '', action) => {
+  const { type, payload } = action;
+  switch (type) {
     case FILTER_DATA:
       return payload;
     default:
