@@ -7,12 +7,12 @@ import { useParams } from 'react-router-dom';
 
 const CountryDetails = () => {
   const stateData = useSelector((state) => state.corona);
-  const newStateData = stateData.slice(0, 50);
+  // const newStateData = stateData.slice(0, 50);
   const { country } = useParams();
   return (
     <div className="details">
       {
-        newStateData.map((eachCountry, index) => {
+        stateData.map((eachCountry, index) => {
           if (eachCountry.country === country) {
             const {
               continent,

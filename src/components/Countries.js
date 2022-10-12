@@ -7,36 +7,43 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Countries = ({
-  countries,
-  affected,
-  // filteredContinent,
-  // filteredCountry,
+  // countries,
+  // affected,
+  text,
+  continents,
+  // stateData,
+  stateSearchData,
+  filteredContinent,
+//   filteredCountry,
 }) => (
   <div className="country">
-    {/* {console.log(filteredContinent)} */}
-    {/* {console.log(filteredCountry)} */}
     {
-      countries.map((country, index) => (
-        <div
-          className="eachCountry"
-          key={index}
-        >
-          <Link className="links" to={`/${country}`}>➔</Link>
-          <div className="nameNum">
-            <h2 className="countryName">{country.toUpperCase()}</h2>
-            <p className="numAffected">{affected[index]}</p>
+      (stateSearchData === '' || stateSearchData !== continents) ? text
+        : filteredContinent.map((countries, index) => (
+          <div
+            className="eachCountry"
+            key={index}
+          >
+            <Link className="links" to={`/${countries.country}`}>➔</Link>
+            <div className="nameNum">
+              <h2 className="countryName">{countries.country.toUpperCase()}</h2>
+              <p className="numAffected">{countries.confirmed[index]}</p>
+            </div>
           </div>
-        </div>
-      ))
+        ))
     }
   </div>
 );
 
 Countries.propTypes = {
-  countries: PropTypes.array.isRequired,
-  affected: PropTypes.array.isRequired,
-  // filteredContinent: PropTypes.array.isRequired,
+  // countries: PropTypes.array.isRequired,
+  // affected: PropTypes.array.isRequired,
+  filteredContinent: PropTypes.array.isRequired,
   // filteredCountry: PropTypes.array.isRequired,
+  // stateData: PropTypes.array.isRequired,
+  stateSearchData: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  continents: PropTypes.string.isRequired,
 };
 
 export default Countries;
