@@ -11,7 +11,7 @@ import Countries from './Countries';
 const date = new Date();
 const hour = date.getHours();
 const message = 'Come Back in the Morning by 7:00 AM';
-const time = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+const time = `${hour}:${date.getMinutes()}:${date.getSeconds()}`;
 
 const Continent = () => {
   const dispatch = useDispatch();
@@ -103,7 +103,6 @@ const Continent = () => {
         <h5 className="titleh5">STATS BY COUNTRY</h5>
         <Countries
           continents={continents}
-          text={text}
           stateSearchData={stateSearchData}
           filteredContinent={filteredContinent}
         />

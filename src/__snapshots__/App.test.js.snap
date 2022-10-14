@@ -14,11 +14,12 @@ Object {
           <p
             class="headerp"
           >
-            <span
-              class="lessthan"
+            <a
+              class="homeLinks"
+              href="/"
             >
               &lt;
-            </span>
+            </a>
             2022
           </p>
           <p
@@ -31,6 +32,17 @@ Object {
         <div
           class="covidBody"
         >
+          <form
+            class="form"
+          >
+            <input
+              class="input"
+              name="search"
+              placeholder="Search By Continent"
+              type="search"
+              value=""
+            />
+          </form>
           <div
             class="titleBody"
           >
@@ -47,11 +59,13 @@ Object {
             >
               <h2
                 class="continent"
-              />
+              >
+                TOTAL CONFIRMED CORONA-VIRUS CASES IN THE WORLD
+              </h2>
               <p
                 class="numberOfAffected"
               >
-                Loading...
+                0
                  Affected
               </p>
             </div>
@@ -82,11 +96,12 @@ Object {
         <p
           class="headerp"
         >
-          <span
-            class="lessthan"
+          <a
+            class="homeLinks"
+            href="/"
           >
             &lt;
-          </span>
+          </a>
           2022
         </p>
         <p
@@ -99,6 +114,17 @@ Object {
       <div
         class="covidBody"
       >
+        <form
+          class="form"
+        >
+          <input
+            class="input"
+            name="search"
+            placeholder="Search By Continent"
+            type="search"
+            value=""
+          />
+        </form>
         <div
           class="titleBody"
         >
@@ -115,11 +141,13 @@ Object {
           >
             <h2
               class="continent"
-            />
+            >
+              TOTAL CONFIRMED CORONA-VIRUS CASES IN THE WORLD
+            </h2>
             <p
               class="numberOfAffected"
             >
-              Loading...
+              0
                Affected
             </p>
           </div>

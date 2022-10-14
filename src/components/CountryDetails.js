@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /* eslint-disable consistent-return */
 /* eslint-disable array-callback-return */
 /* eslint-disable react/no-array-index-key */
@@ -17,7 +18,7 @@ const CountryDetails = () => {
             const {
               continent,
               confirmed,
-              capitalCity,
+              capital_city,
               deaths,
               recovered,
               updated,
@@ -25,8 +26,13 @@ const CountryDetails = () => {
             return (
               <div key={index}>
                 <section className="countryConfirmed">
-                  <h2 className="countrydetail">{country.toUpperCase()}</h2>
-                  <p className="confirmDetail">{confirmed}</p>
+                  <div className="img">
+                    <img src="map1.png" alt="Continent Map" />
+                  </div>
+                  <div>
+                    <h2 className="countrydetail">{country.toUpperCase()}</h2>
+                    <p className="confirmDetail">{confirmed}</p>
+                  </div>
                 </section>
                 <section className="countryDetails">
                   <h4 className="titleh4">Country Breakdown</h4>
@@ -36,7 +42,7 @@ const CountryDetails = () => {
                   </div>
                   <div className="allDetails">
                     <h4>Capital-city</h4>
-                    <p>{capitalCity}</p>
+                    <p>{capital_city}</p>
                   </div>
                   <div className="allDetails">
                     <h4>Deaths</h4>

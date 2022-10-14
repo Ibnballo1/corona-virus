@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* eslint-disable-line no-console */
 import axios from 'axios';
 
 // Actions Types
@@ -17,7 +19,7 @@ export const getData = () => async (dispatch) => {
     const {
       continent,
       country,
-      capitalCity,
+      capital_city,
       confirmed,
       deaths,
       recovered,
@@ -27,7 +29,7 @@ export const getData = () => async (dispatch) => {
     return {
       continent,
       country,
-      capitalCity,
+      capital_city,
       confirmed,
       deaths,
       recovered,
