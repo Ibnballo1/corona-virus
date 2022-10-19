@@ -43,6 +43,8 @@ Feel free to check the [issues page](https://github.com/Ibnballo1/corona-virus/i
 
 # Live Demo
 
+[Corona-Virus World Cases](https://charming-panda-fc2536.netlify.app/)
+
 # Presentation
 
 [Corona-Virus Video](https://www.loom.com/share/57ed19e7c99f4dd6b1c34cc1368e6b83)
